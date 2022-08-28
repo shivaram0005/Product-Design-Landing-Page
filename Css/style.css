@@ -32,6 +32,10 @@ body{
 .navbar .navbar-logo img{
     width: 100px;
 }
+.navbar .barss{
+    display: none;
+    color: #ffffff;
+}
 .grow{
     position: relative;
     right: 150px;
@@ -310,4 +314,54 @@ body{
 .bottom-social .bottom-social-icons img{
     margin: 20px;
 
+}
+
+@media screen and (max-width:1300px) {
+
+    .navbar .grow{
+        display: none;
+    }
+
+    .navbar .barss{
+        display: block;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .design-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .design-section .section{
+        margin-bottom: 20px;
+    }
+    .client-section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .client-section .section-one{
+       
+        margin: 0 auto;
+    }
+    
+    .client-section .section-two{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        
+    }
+
+    .projects .contact{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 400px;
+    }
+    .projects .contact p{
+        margin-left: 10px;
+    }
+   
 }
